@@ -67,7 +67,28 @@ const key = {
         }
     },
     remove(){
-        console.log('remove !!');
+         /**
+         * catch if there is no KEY.
+         */
+        try{
+            /**
+             * instanciate a new KeyManager
+             */
+            const keyManager = new KeyManager();
+            /**
+             * remove saved key  
+             */
+            keyManager.deleteKey();
+
+            /**
+             * success
+             */
+            console.log(' API Key Removed'.blue);
+            return key;
+
+        } catch (err){
+            console.error(err.message.red);
+        }
     }
 }
 
