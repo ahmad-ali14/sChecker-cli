@@ -8,8 +8,8 @@ const colors = require('colors');
 const isRequired = require('../utils/validation').isRequired;
 
 const check = {
-    price(){
-
+    price(cmd){
+        console.log( cmd.coin, cmd.cur)
     }
 
 }

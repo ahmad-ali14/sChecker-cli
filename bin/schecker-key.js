@@ -9,7 +9,7 @@ const key = require('../commands/key.js');
 porogram
     /**
      * register set command and its description 
-     * this is a sub-command (or option) for the -key command.
+     * this is a sub-command  for the -key command.
      */
     .command('set')
     .description('Set API Key -- Get at https://nomics.com/ ')
@@ -25,7 +25,7 @@ porogram
 porogram
     /**
      * register a command and its description 
-     * this is a sub-command (or option) for the -key command.
+     * this is a sub-command  for the -key command.
      */
     .command('show')
     .description('show API Key')
@@ -38,7 +38,7 @@ porogram
 porogram
     /**
      * register set command and its description 
-     * this is a sub-command (or option) for the -key command.
+     * this is a sub-command  for the -key command.
      */
     .command('remove')
     .description('remove API Key ')
