@@ -44,7 +44,7 @@ const key = {
     },
     show(){
         /**
-         * 
+         * catch if there is no KEY.
          */
         try{
             /**
@@ -54,8 +54,16 @@ const key = {
             /**
              * extract saved key  
              */
-        } catch (err){
+            const key = keyManager.getKey();
 
+            /**
+             * success
+             */
+            console.log('Current API Key:  ', key.yellow);
+            return key;
+
+        } catch (err){
+            console.error(err.message.red);
         }
     },
     remove(){
