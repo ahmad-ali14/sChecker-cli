@@ -3,7 +3,7 @@
  */
 
 const porogram = require('commander');
-const key = require('../commands/key.js');
+const check = require('../commands/check.js');
 
 
 porogram
@@ -18,7 +18,7 @@ porogram
      * register the action for that command, simply a function. 
      */
        
-    .action(key.set)
+    .action(check.price)
 
 
 /**
