@@ -1,9 +1,9 @@
 {
-  "name": "schecker-cli",
+  "name": "schecker",
   "version": "1.0.0",
   "description": "crypto currency stock prices checker cli",
   "main": "index.js",
-  "bin": "./bin/schecker_cli.js",
+  "bin": "./bin/schecker.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
