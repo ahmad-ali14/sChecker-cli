@@ -1,3 +1,7 @@
+/**
+ *  sub-commands for (key) command
+ */
+
 const porogram = require('commander');
 const key = require('../commands/key.js');
 

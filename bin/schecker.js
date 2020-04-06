@@ -15,10 +15,11 @@ program
     .version(pkg.version)
 
 /* 
-* register a command help
+* register Top level commands and thier description 
 */
 
     .command('key', 'Manage API key --https://nomics.com/')
+    .command('check', 'Check Coin Price Info')
 
 /*
 * parsing user input
