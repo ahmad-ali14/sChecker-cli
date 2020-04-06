@@ -1,0 +1,33 @@
+{
+  "name": "schecker-cli",
+  "version": "1.0.0",
+  "description": "crypto currency stock prices checker cli",
+  "main": "index.js",
+  "bin": "./bin/schecker_cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aa947/sChecker-cli.git"
+  },
+  "keywords": [
+    "cryptocurrency",
+    "stock",
+    "checks",
+    "prices"
+  ],
+  "author": "Ahmad Ali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aa947/sChecker-cli/issues"
+  },
+  "homepage": "https://github.com/aa947/sChecker-cli#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "colors": "^1.4.0",
+    "commander": "^5.0.0",
+    "configstore": "^5.0.1",
+    "inquirer": "^7.1.0"
+  }
+}
