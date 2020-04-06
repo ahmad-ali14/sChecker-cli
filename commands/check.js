@@ -1,15 +1,39 @@
 /**
  * this file contains sub-commands' action functions for the main command (key) inside the 
- *  file ./bin/schecker-key.js .
+ *  file ./bin/schecker-check.js .
  */
 
-const inquirer = require('inquirer');
-const colors = require('colors');
-const isRequired = require('../utils/validation').isRequired;
+const KeyManager = require('../lib/KeyManager.js');
+const CryptoAPI = require('../lib/cryptoAPI.js');
+
 
 const check = {
-    price(cmd){
-        console.log( cmd.coin, cmd.cur)
+    async price(cmd){
+        /**
+         * catch Errors coming from keys operations or API call
+         */
+        try{
+            /**
+            * instanciate a new KeyManager and getting the Key from it
+            */
+            const keyManager = new KeyManager();
+            const key = keyManager.getKey();
+
+            /**
+             * instanciate a new cryptoApi, then make the API call, using the key and cmd  both 
+             * options
+             */
+            const api = new CryptoAPI(key);
+            const priceOutputData = await api.getPriceData(cmd.coin, cmd.cur);
+
+            /**
+             * success
+             */
+            console.log(priceOutputData);
+
+        } catch(err){
+            console.error(err.message.red);
+        }
     }
 
 }
