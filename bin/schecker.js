@@ -12,13 +12,18 @@ program
 * require package.json and assign commander version to it. 
 */
 
-.version(pkg.version)
+    .version(pkg.version)
 
 /* 
-
+* register a command help
 */
 
-.parse(process.argv)
+    .command('key', 'Manage API key --https://nomics.com/')
+
+/*
+* parsing user input
+ */
+    .parse(process.argv)
 
 /*
  get the arguments from user input
