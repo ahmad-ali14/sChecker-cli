@@ -1,6 +1,6 @@
 /**
  * this file contains sub-commands' action functions for the main command (key) inside the 
- *  file ./bin/schecker-check.js .
+ *  file ./bin/schecker-check.js.
  */
 
 const KeyManager = require('../lib/KeyManager.js');
