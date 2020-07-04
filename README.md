@@ -3,3 +3,4 @@
 cryptocurrency stock prices checker cli
 
 ## comands 
+
