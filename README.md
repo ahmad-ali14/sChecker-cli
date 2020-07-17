@@ -8,3 +8,5 @@ cryptocurrency stock prices checker cli
 
 
 
+
+
